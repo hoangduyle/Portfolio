@@ -8,12 +8,7 @@
   <link rel="preload">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animation.style.css" />
-  <link rel="stylesheet" id="ryancv-fonts-css"
-    href="//fonts.googleapis.com/css?family=Poppins%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i&amp&display=swap;subset=latin%2Clatin-ext"
-    type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/inoicons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/responsive(1100).css" />
   <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/resposive(650).css" />
 </head>
@@ -39,7 +34,7 @@
       </ul>
     </div>
     <div class="container">
-      <input type="radio" name="menu" id="about-card" checked />
+      <input type="radio" name="menu" id="about-card" />
       <input type="radio" name="menu" id="resume-card" />
       <input type="radio" name="menu" id="works-card" />
       <input type="radio" name="menu" id="blogs-card" />
@@ -58,31 +53,41 @@
           <ul class="menu-list">
             <li class="menu">
               <label for="about-card">
-                <span class="icon ion-ios-person"></span>
+                <div class="icon">
+                <span class="fa-solid fa-user"></span>
+                </div>
                 About
               </label>
             </li>
             <li class="menu">
               <label for="resume-card">
-                <span class="icon ion-android-list"></span>
+                <div class ="icon">
+                <span class="fa-solid fa-business-time"></span>
+                </div>
                 Resume
               </label>
             </li>
             <li class="menu">
-              <label for="#works-card">
-                <span class="icon ion-paintbrush"></span>
-                Works
-              </label>
-            </li>
-            <li class="menu">
               <label for="blogs-card">
-                <span class="icon ion-chatbox-working"></span>
+                <div class ="icon">
+                <span class="fa-solid fa-lightbulb"></span>
+                </div>
                 Project
               </label>
             </li>
             <li class="menu">
+              <label for="#works-card">
+                <div class ="icon">
+                <span class="fa-solid fa-plane"></span>
+                </div>
+                Travel
+              </label>
+            </li>
+            <li class="menu">
               <label for="contact-card">
-                <span class="icon ion-at"></span>
+                <div class ="icon">
+                <span class="fa-solid fa-envelope"></span>
+                </div>
                 Contact
               </label>
             </li>
@@ -821,6 +826,30 @@
               <div class="blog-item">
                 <div class="img">
                   <a href="#">
+                    <img src="imgs/sports.jpg" alt="" />
+                    <div class="info">
+                      <span class="ion-android-document"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dics">
+                  <a class="name" href="#">
+                    <div class="time-period active">
+                      <span>2023 - Present</span>
+                    </div>
+                    FanClub Project
+                  </a>
+                  <div class="short-dics">
+                    This is an application developed with Java for the Back-end and ... for the Front-end.<br>
+                    It will allow Fans from many sports of different clubs to talk or debate of different topics.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blogs-content-wrap">
+              <div class="blog-item">
+                <div class="img">
+                  <a href="#">
                     <img src="imgs/work1-600x801.jpg" alt="" />
                     <div class="info">
                       <span class="ion-android-document"></span>
@@ -830,9 +859,9 @@
                 <div class="dics">
                   <a class="name" href="#">
                     <div class="time-period active">
-                      <span>2013 - Present</span>
+                      <span>2022 - Present</span>
                     </div>
-                    Lorem ipsum dolor sit amet.
+                    Incomming project...
                   </a>
                   <div class="short-dics">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -855,9 +884,9 @@
                 <div class="dics">
                   <a class="name" href="#">
                     <div class="time-period active">
-                      <span>2013 - Present</span>
+                      <span>2022 - Present</span>
                     </div>
-                    Lorem ipsum dolor sit amet.
+                    Incomming project...
                   </a>
                   <div class="short-dics">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -880,9 +909,9 @@
                 <div class="dics">
                   <a class="name" href="#">
                     <div class="time-period active">
-                      <span>2013 - Present</span>
+                      <span>2022 - Present</span>
                     </div>
-                    Lorem ipsum dolor sit amet.
+                    Incomming project...
                   </a>
                   <div class="short-dics">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -892,42 +921,6 @@
                 </div>
               </div>
             </div>
-            <div class="blogs-content-wrap">
-              <div class="blog-item">
-                <div class="img">
-                  <a href="#">
-                    <img src="imgs/work1-600x801.jpg" alt="" />
-                    <div class="info">
-                      <span class="ion-android-document"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="dics">
-                  <a class="name" href="#">
-                    <div class="time-period active">
-                      <span>2013 - Present</span>
-                    </div>
-                    Lorem ipsum dolor sit amet.
-                  </a>
-                  <div class="short-dics">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ratione laboriosam provident illum quos dolorum. Ad, at!
-                    Ipsa reprehenderit molestias aliquam.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog-pg">
-            <span class="blog-pg-left ion-ios-arrow-left"></span>
-            <ul>
-              <li class="blog-pg-number active">1</li>
-              <li class="blog-pg-number">2</li>
-              <li class="blog-pg-number">3</li>
-              <li class="">...</li>
-              <li class="blog-pg-number">7</li>
-            </ul>
-            <span class="blog-pg-right ion-ios-arrow-right"></span>
           </div>
         </div>
       </div>
@@ -980,7 +973,7 @@
             <span class="header">Contact Form</span>
           </div>
           <div class="section-content contacts-section-content">
-            <form action="#">
+            <form action="mailto:hoangduyle1@gmail.com?subject=Fomulaire Mon javascript" name="envoi" method=POST enctype="text/plain">
               <div class="form-group" style="width: 49%;"><input type="text" placeholder="Full Name"></div>
               <div class="form-group" style="width: 49%;"><input type="email" placeholder="Email"></div>
               <div class="form-group" style="width: 100%;padding-top: 10PX;"><textarea name="message" cols="30"
